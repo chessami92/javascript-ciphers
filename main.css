@@ -1,0 +1,39 @@
+@keyframes colorFlash {
+    10% { background-color: #0066cc; }
+    100% { background-color: transparent; }
+}
+@-webkit-keyframes colorFlash {
+    10% { background-color: #0066cc; }
+    100% { background-color: transparent; }
+}
+.colorFlash {
+    animation: colorFlash 500ms;
+    -webkit-animation: colorFlash 500ms;
+}
+
+.smoothColor {
+    transition: background-color 500ms;
+    -webkit-transition: background-color 500ms;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+span {
+    display: inline-block;
+}
+th {
+    text-align: center;
+}
+td {
+    transition: height 1s;
+    -webkit-transition: height 1s;
+}
+textarea {
+    margin: 10px 10px 10px 10px;
+    font-family: sans-serif;
+}
+.smallInput {
+    width: 25px;
+}

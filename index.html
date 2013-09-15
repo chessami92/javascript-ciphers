@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Affline Cipher</title>
+        <meta name="description" content="Automatic encryption and decryption.">
+        <meta name="author" content="Josh DeWitt">
+
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+    </head>
+
+    <body>
+        <span class="center">
+            <table>
+                <tr>
+                    <td id="aTd" class="smoothColor">
+                        a: <input id="a" class="smallInput" value="1"/>
+                        <div id="aError"></div>
+                    </td>
+                    <td>b: <input id="b" class="smallInput" value="0"/></td>
+                </tr>
+                <tr>
+                    <td id="plaintextTd">
+                        <b>Plaintext</b><br/>
+                        <textarea id="plaintext" rows="4" cols="50"></textarea>
+                    </td>
+                    <td id="ciphertextTd">
+                        <b>Ciphertext</b><br/>
+                        <textarea id="ciphertext" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </span>
+
+        <script src="main.js" type="text/javascript"></script>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </body>
+</html>
