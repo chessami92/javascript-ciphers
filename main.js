@@ -1,6 +1,6 @@
 var a = 1;
 var b = 0;
-var lastDone = function () { encrypt(); };
+var lastDone = encrypt;
 
 listener('plaintext', encrypt);
 listener('ciphertext', decrypt);
@@ -16,12 +16,12 @@ function flashColor(elementId) {
 
 function encrypt() {
     flashColor('ciphertextTd');
-    lastDone = function () { encrypt(); };
+    lastDone = encrypt;
 }
 
 function decrypt() {
     flashColor('plaintextTd');
-    lastDone = function () { decrypt(); };
+    lastDone = decrypt;
 }
 
 function validInt(value) {
