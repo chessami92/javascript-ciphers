@@ -1,9 +1,9 @@
 @keyframes colorFlash {
-    10% { background-color: #0066cc; }
+    10% { background-color: #855c33; }
     100% { background-color: transparent; }
 }
 @-webkit-keyframes colorFlash {
-    10% { background-color: #0066cc; }
+    10% { background-color: #855c33; }
     100% { background-color: transparent; }
 }
 .colorFlash {
@@ -19,14 +19,21 @@
 body {
     text-align: center;
     font-family: sans-serif;
+    background-color: #80b280;
 }
 span {
     display: inline-block;
+}
+table {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #dddddd;
 }
 th {
     text-align: center;
 }
 td {
+    border-radius: 10px;
     transition: height 1s;
     -webkit-transition: height 1s;
 }
